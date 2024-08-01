@@ -37,9 +37,9 @@ function seleccionar(element) {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("html").setAttribute('data-progress', 95);
-    document.getElementById("js").setAttribute('data-progress', 80);
-    document.getElementById("bd").setAttribute('data-progress', 94);
-    document.getElementById("php").setAttribute('data-progress', 90);
+    document.getElementById("js").setAttribute('data-progress', 70);
+    document.getElementById("bd").setAttribute('data-progress', 84);
+    document.getElementById("php").setAttribute('data-progress', 80);
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
