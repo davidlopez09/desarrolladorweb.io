@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <link rel="icon" href="programacion.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  <title>Desarrollador web</title>
+</head>
+
+<body>
+
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <h1 id="rol">Eduardo López</h1>
+          <nav id="nav" class="">
+            <ul id="links">
+              <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+              <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+              <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+              <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+              <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+            </ul>
+          </nav>
+
+          <div id="icono-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="redes">
+            <a href="https://web.facebook.com/profile.php?id=100088148403345"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://wa.me/573233847323" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/david_lopez0929/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/davidlopez09"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+      </header>
+      <div class="presentacion">
+        <div class="contenedor-foto">
+          <img src="Yo2.jpg" alt="Foto de Eduardo Lopez">
+        </div>
+        <br>
+        <div class="texto">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2 id="yo"><span id="soy">Soy </span>Eduardo López,<br><span id="role" class="typed-text">Desarrollador
+              web</span></h2>
+          <div class="lenguajes">
+            <img id="html2" src="html.jpg.png" alt="HTML">
+            <img id="css" src="css-3.png" alt="CSS">
+            <img id="js2" src="js.jpg" alt="JavaScript">
+            <img id="php2" src="php.png" alt="PHP">
+            <img id="mysql" src="base-de-datos.png" alt="MySQL">
+          </div>
+          <br>
+           <p class="descripcion">Desarrollador web enfocado en transformar conceptos en experiencias digitales impresionantes, superando expectativas con creatividad y destreza técnica. Listo para enfrentar desafíos y llevar cada proyecto al siguiente nivel, brindando oportunidades</p>
+          <br>
+          <a class="boton" href="#portafolio">Ir a portafolio</a>
+        </div>
+      </div>
+      <br>
+  </section>
+
+  <section id="sobremi">
+    <br>
+    <div class="contenedor-foto" data-aos="fade-right">
+      <img src="Yo2.jpg" alt="Foto de Eduardo Lopez">
+    </div>
+    <br>
+    <div style="font-weight:bold;" class="sobremi" data-aos="fade-left">
+      <p class="titulo-seccion">Sobre mi</p>
+      <h2>Hola, <span>Soy Eduardo López</span> </h2>
+      <h3 style="font-weight:bold;">Desarrollador Web</h3>
+      <p>Soy un apasionado por crear sitios web responsivos y aplicaciones dinámicas. Manejo lenguajes
+        de programación como HTML, CSS, JavaScript y Php, y experiencia en bases de datos en Mysql. Me destaco por mi
+        capacidad para resolver problemas. Con gran experiencia en desarrollo
+        front end y back-end, Estoy comprometido en ofrecer soluciones innovadoras
+        y de alta calidad que impulsen el éxito de los proyectos.
+      </p>
+      <a href="Hoja de vida/CV_EDUARDO.pdf" download="CV_EDUARDO.pdf">Descargar CV</a>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h3 class="titulo-seccion">Mis Servicios</h3>
+    <div class="fila">
+      <div class="servicios" data-aos="fade-right" data-aos-delay="100" data-aos-offset="200">
+        <div class="lenguajes">
+          <img id="html2" src="html.jpg.png" alt="HTML">
+          <img id="css" src="css-3.png" alt="CSS">
+          <img id="js2" src="js.jpg" alt="JavaScript">
+        </div>
+        <h4>Diseño de sitios web</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>front-end</li>
+          <li>back-end </li>
+          <li>Base de datos</li>
+        </ul>
+        <p class="descripcion">Ofrezco servicios de desarrollo web front-end, utilizando HTML,
+          CSS y JavaScript para crear sitios web atractivos y funcionales. Diseño
+          interfaces responsivas y dinámicas.
+        </p>
+      </div>
+      <div class="servicios" data-aos="fade-right" data-aos-delay="300" data-aos-offset="200">
+        <div class="lenguajes">
+          <img id="php2" src="php.png" alt="PHP">
+          <img id="mysql" src="base-de-datos.png" alt="MySQL">
+        </div>
+        <h4>Bases de datos</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>front-end</li>
+          <li>back-end </li>
+          <li>Base de datos</li>
+        </ul>
+        <p class="descripcion">
+          Ofrezco servicios de creación y gestión de bases de datos MySQL, desde la
+          construcción de bases de datos
+          desde cero hasta su mantenimiento, optimización y seguridad.</p>
+      </div>
+      <div class="servicios" data-aos="fade-right" data-aos-delay="500" data-aos-offset="200">
+        <div class="lenguajes">
+          <img id="css" src="css-3.png" alt="CSS">
+          <img id="css" src="phone2.png" alt="phone">
+          <img id="css" src="android.jpg" alt="tablet">
+          <img id="css" src="Windows-Logo.jpg" alt="windo">
+        </div>
+        <h4>Diseño Responsivo</h4>
+        <hr>
+        <ul class="servicios-tag">
+          <li>front-end</li>
+          <li>back-end </li>
+          <li>Base de datos</li>
+        </ul>
+        <p class="descripcion">
+          Ofrezco servicios de diseño responsivo en programación web para crear
+          sitios que se adapten perfectamente a cualquier dispositivo, desde móviles hasta pantallas
+          de escritorio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="contenedor-skills" id="skills">
+    <h3>HABILIDADES</h3>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span> Html & Css</p>
+        <span class="porcentaje">95%</span>
+      </div>
+      <div class="barra">
+        <div id="html" class="barra-progreso1"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span> Javascript</p>
+        <span class="porcentaje">80%</span>
+      </div>
+      <div class="barra">
+        <div id="js" class="barra-progreso2"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span> Base de Datos</p>
+        <span class="porcentaje">94%</span>
+      </div>
+      <div class="barra">
+        <div id="bd" class="barra-progreso3"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="info">
+        <p><span class="lista"></span> PHP</p>
+        <span class="porcentaje">90%</span>
+      </div>
+      <div class="barra">
+        <div id="php" class="barra-progreso4"></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="portafolio">
+    <h3 class="titulo-seccion">Mis Proyectos</h3>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="empanadictos.png" alt="">
+        <div class="info">
+          <h4> Empanadictos, es un sitio web online dedicado a la venta de Empandas al por mayor y 
+            a la venta de ropa con la marca de esta misma.
+          </h4>
+          <p>Diseño Web</p>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="Agrosen.png" alt="">
+        <div class="info">
+          <h4>AGROSEN es una plataforma en línea para la venta de animales de granja,
+             actualmente perteneciente al SENA C.A.B.P.
+          </h4>
+          <p>Diseño Web</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="empanadelicias.png" alt="">
+        <div class="info">
+          <h4>Empanadelicias, es un sitio web online de venta de empanadas por unidad y por cantidad deseada
+            mayor o igual a 5 unidades donde el cliente puede hacer pedidos online.
+          </h4>
+          <p>Diseño Web</p>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="negocio.png" alt="">
+        <div class="info">
+          <h4>Creación de una base de datos para DistriMerca, un granero comercial, con el propósito de 
+            gestionar pagos y mantener un registro ordenado de los créditos y pagos pendientes.</h4>
+          <p>Diseño Web</p>
+        </div>
+      </div>
+     
+    </div>
+    </div>
+  </section>
+ <!-- 
+<section id="contacto">
+    <h3 class="titulo-seccion">CONTACTANOS AHORA</h3>
+    <br>
+    <div class="contenedor-form">
+        <form action="send_message.php" method="post">
+            <div class="mitad">
+                <input type="text" name="nombre" placeholder="Nombre Completo" class="input-mitad" required>
+                <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required>
+            </div>
+            <br>
+            <div class="fila">
+                <input type="text" name="tema" placeholder="Tema..." class="input-full" required>
+            </div>
+            <div class="fila">
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+        </form>
+    </div>
+</section>
+-->
+  <footer>
+    <h2 class="contactame"> CONTÁCTAME EN MIS REDES</h2>
+    <div class="contacto">
+      <a class="red" href="tel:+573233847323"><i class="fa fa-phone"></i></a>
+      <a class="red" href="https://web.facebook.com/profile.php?id=100088148403345"><i class="fa-brands fa-facebook"></i></a>
+      <a class="red" href="https://wa.me/573233847323" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a class="red" href="https://www.instagram.com/david_lopez0929/"><i class="fa-brands fa-instagram"></i></a>
+      <a class="red" href="https://github.com/davidlopez09"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <br>
+    <p>TODOS LOS DERECHOS RESERVADOS - 2024 </p>
+
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
