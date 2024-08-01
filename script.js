@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('html').style.width = '95%';
     document.getElementById('js').style.width = '80%';
-    document.getElementById('bd').style.width = '94%';
-    document.getElementById('php').style.width = '90%';
+    document.getElementById('bd').style.width = '84%';
+    document.getElementById('php').style.width = '80%';
   });
 
   AOS.init();
